@@ -1,31 +1,26 @@
-import { Button, StyleSheet, Text, View } from "react-native";
+import { Button, StyleSheet, Text, TextInput, View } from "react-native";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.dummyText}>Hello World!</Text>
-      <Button title="CLICK HERE" />
+    <View style={styles.appContainer}>
+      <View>
+        <View>
+          <TextInput placeholder='Your Course Goal' />
+          <Button title="Add Goal" />
+        </View>
+        <View>
+          <Text>Goals:</Text>
+        </View>
+      </View>
     </View>
   );
 }
 
 // below --- makes styling reusable
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  dummyText: {
-    margin: 16,
-    borderWidth: 2,
-    borderColor: "green",
-    padding: 16,
-    borderRadius: 10,
-    color: "white",
-    backgroundColor: "blue",
-  },
+  appContainer: {
+    padding: 50
+  }
 });
 
 // NO CSS IN REACT NATIVE --- CAN APPLY STYLES BUT DOING IT INLINE STYLES OR STYLESHEET OBJECTS ---
