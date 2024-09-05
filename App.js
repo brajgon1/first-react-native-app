@@ -18,3 +18,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+// NO CSS IN REACT NATIVE --- CAN APPLY STYLES BUT DOING IT INLINE STYLES OR STYLESHEET OBJECTS ---
+
+// APP.JS IS THE ROOT COMPONENT IN THE APP 
